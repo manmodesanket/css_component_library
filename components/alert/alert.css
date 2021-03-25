@@ -1,0 +1,30 @@
+
+.alert {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    padding: 1em;
+    border-radius: 0.25rem;
+}
+
+.alert-primary {
+    border: 1px solid rgb(88, 197, 211);
+    background-color: rgb(88, 197, 211, 0.5);
+}
+
+.alert-success {
+    border: 1px solid rgb(145, 218, 163);
+    background-color: rgb(145, 218, 163, 0.5);
+}
+
+.alert-warning {
+    background-color: rgba(255, 174, 68, 0.5);
+}
+
+.alert-danger {
+    background-color: rgb(216, 86, 86, 0.5);
+}
+
+.alert-icon {
+    margin-right: 0.75em;
+}

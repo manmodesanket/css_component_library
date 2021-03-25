@@ -1,0 +1,25 @@
+
+.component-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-round {
+    border-radius: 50%;
+}
+
+.avatar-rectangle {
+   border-radius: 5%;
+}
+
+.avatar-small {
+    width: 2em;
+}
+
+.avatar-medium {
+    width: 4em;
+}
+
+.avatar-large {
+    width: 6em;
+}

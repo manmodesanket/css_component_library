@@ -1,0 +1,232 @@
+@import './components/avatar/avatar.css';
+@import './components/badge/badge.css';
+@import './components/button/button.css';
+@import './components/navigation/navigation.css';
+@import './components/alert/alert.css';
+@import './components/card/card.css';
+@import './components/modal/modal.css';
+@import './components/list/list.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --slate: #8892b0;
+    --green: #64ffda;
+    --white: #e6f1ff;
+    -light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --font-sans: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --border-radius: 4px;
+    --nav-height: 100px;
+    --nav-scroll-height: 70px;
+    --tab-height: 42px;
+    --tab-width: 120px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: var(--white);
+}
+
+.main-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    order: 2;
+}
+
+.component-page {
+    order: 2;
+    padding: 1em;
+}
+
+.title {
+    text-align: center;
+    font-size: min(10vw, 4rem);
+}
+
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 0;
+}
+
+
+/*General Componenets*/
+.item-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item {
+    padding: 1em 0;
+}
+
+.toggler {
+    width: 10%;
+}
+
+.toggler-icon {
+    width: 100%;
+}
+
+.st {
+    transition: all 0.5s ease;
+}
+
+.component-list {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+.show {
+    display: initial;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.hide {
+    display: none;
+}
+
+.component-list-item {
+    font-size: 1rem;
+    padding: 0.5em 0;
+}
+
+.component-list-item:hover {
+    background-color: rgb(0,0,0, 0.1);
+}
+
+.component-list-item {
+    color: black;
+    text-decoration: none;
+}
+
+
+@media (min-width: 650px) {
+    .main-page {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .heading {
+        position: relative;
+        left: 15%;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        height: 100vh;
+        margin:0 0;
+    }
+
+    .component-list {
+        position: fixed;
+        order: -1;
+        width: 15%;
+        height: 100vh;      
+        display: flex;
+        flex-direction: column;
+        background-color:white;
+        text-align: center;
+        margin: 0 0;
+        overflow-y: auto; 
+    }
+
+    .toggler {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        order: -1;
+        width: 15%;
+        height: 100vh;      
+        display: flex;
+        flex-direction: column;
+        background-color:white;
+        text-align: center;
+        margin: 0 0;
+    }
+
+    .nav:hover {
+        overflow-y: auto;
+    }
+
+    .component-list-item {
+        margin-top: 0;
+        font-size: 1.3rem;
+        padding: 0.5em 0;
+        width: 100%;
+    }
+
+    /*General Componenet page*/
+    .component-page {
+        position: relative;
+        left: 15%;
+        text-align: unset;
+        width: 85%;
+        margin-left: 2em;
+        padding: 0 0;
+        margin: 0;
+        padding: 1em;
+    }
+
+    .item-card {
+        text-align: unset;
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        padding: 1em;
+    }
+
+    .items {
+        font-size: 1rem;
+    }
+
+}
