@@ -13,6 +13,7 @@
 
 
 .list-group .active{
+    color: white;
     background-color: #007bff;
     border-bottom-color: #007bff;
 }
