@@ -1,10 +1,16 @@
 
 .alert {
     display: flex;
+    justify-content: space-between;
     border: 1px solid black;
     align-items: center;
     padding: 1em;
     border-radius: 0.25rem;
+}
+
+.alert .btn-close {
+    background-color: transparent;
+    border: none;
 }
 
 .alert-primary {

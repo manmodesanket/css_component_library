@@ -21,6 +21,7 @@
     width: 10%;
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 
 .modal-body {
