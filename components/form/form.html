@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Modal</title>
+    <title>Avatar</title>
 </head>
 <body>
     <nav class="navbar">
@@ -12,23 +12,19 @@
     </nav>
     <div class="main-page">
         <div class="component-page">
-            <h1 class="component-title">Modals</h1>
+            <h1 class="component-title">Form</h1>
             <div class="item-card">
-                <h3>Simple Modal</h3>
-                <div class="modal">
-                    <div class="modal-header">
-                        <header class="modal-title">Modal Title</header>
-                        <button class="close">X</button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Modal body goes here
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
+                <h3>Input Form</h3>
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input class="form-input" type="text">
+                </div>
+            </div>
+            <div class="item-card">
+                <h3>Input Form with error</h3>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input class="form-input form-error" type="text">
                 </div>
             </div>
         </div>
@@ -41,16 +37,17 @@
             </header>
             <aside class="component-list">
                 <a href="../alert/alert.html" class="component-list-item">Alert</a>                   
-                <a href="../avatar/avatar.html" class="component-list-item">Avatar</a>
-                <a href="../badge/badge.html" class="component-list-item">Badges</a>                      
+                <a href="./avatar.html" class="component-list-item">Avatar</a>        
+                <a href="../badge/badge.html" class="component-list-item">Badges</a>              
                 <a href="../button/button.html" class="component-list-item">Button</a>    
                 <a href="../card/card.html" class="component-list-item">Card</a>
-                <a href="../form/form.html" class="component-list-item">Form</a>       
+                <a href="./form.html" class="component-list-item component-list-item-active">Form</a>
                 <a href="../navigation/navigation.html" class="component-list-item">Navigation</a>  
                 <a href="../list/list.html" class="component-list-item">List</a>    
-                <a href="./modal.html" class="component-list-item component-list-item-active">Modal</a>     
+                <a href="../modal/modal.html" class="component-list-item">Modal</a>     
             </aside>
         </div>
+    </div>
     </div>
     <script src="../../index.js"></script>
 </body>
