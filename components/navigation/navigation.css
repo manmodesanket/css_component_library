@@ -3,6 +3,7 @@
     align-items: center;
     padding: 1em;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #dae4ee;
     border: 1 px solid black;
 }
@@ -11,6 +12,7 @@
     color: black;
     font-size: 1.2rem;
     text-decoration: none;
+    width: 10%;
 }
 
 .navbar-nav {
