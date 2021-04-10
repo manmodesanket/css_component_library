@@ -13,6 +13,10 @@
     border: none;
 }
 
+.btn-close:hover {
+    cursor: pointer;
+}
+
 .alert-primary {
     border: 1px solid rgb(88, 197, 211);
     background-color: rgb(88, 197, 211, 0.5);
@@ -24,10 +28,12 @@
 }
 
 .alert-warning {
+    border: 1px solid rgba(255, 174, 68);
     background-color: rgba(255, 174, 68, 0.5);
 }
 
 .alert-danger {
+    border: 1px solid rgb(216, 86, 86);
     background-color: rgb(216, 86, 86, 0.5);
 }
 
