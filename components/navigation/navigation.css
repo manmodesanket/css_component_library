@@ -4,12 +4,12 @@
     padding: 1em;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #dae4ee;
+    background-color: 1877f2;
     border: 1 px solid black;
 }
 
 .navbar-brand {
-    color: black;
+    color: white;
     font-size: 1.2rem;
     text-decoration: none;
     width: 10%;
@@ -25,7 +25,7 @@
 }
 
 .nav-item {
-    color: black;
+    color: white;
     text-decoration: none;
     margin: 0.5em;
 }

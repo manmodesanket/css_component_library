@@ -195,15 +195,7 @@ header button {
     }
 
     .heading {
-        position: relative;
-        left: 15%;
-        order: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 85%;
-        height: 100vh;
-        margin:0 0;
+        margin-top: 6em;
     }
 
     .component-list {
