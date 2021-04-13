@@ -8,6 +8,7 @@
 @import './components/list/list.css';
 @import './components/form/form.css';
 @import './components/rating/rating.css';
+@import './components/toast/toast.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
