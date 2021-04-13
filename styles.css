@@ -216,13 +216,18 @@ header button {
 
 @media (min-width: 650px) {
 
+    .toggler-new {
+        display: none;
+    }
+
     .fixed {
         position: fixed;
+        display: flex;
+        justify-content: space-around;
         top: 0;
         left: 0;
         right: 0;
         width: 100%;
-        z-index: 4;
     }
 
     .main-page {
@@ -246,7 +251,8 @@ header button {
         background-color:white;
         text-align: center;
         margin: 0 0;
-        overflow-y: auto; 
+        overflow-y: auto;
+        z-index: 2; 
     }
 
     .toggler {
