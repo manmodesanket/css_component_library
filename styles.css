@@ -7,6 +7,7 @@
 @import './components/modal/modal.css';
 @import './components/list/list.css';
 @import './components/form/form.css';
+@import './components/rating/rating.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
@@ -17,6 +18,7 @@
     --slate: #8892b0;
     --green: #64ffda;
     --white: #e6f1ff;
+    --primary: #1877f2;
     -light-slate: #a8b2d1;
     --lightest-slate: #ccd6f6;
     --white: #e6f1ff;
@@ -86,6 +88,15 @@ ul {
 
 li {
     padding: 0;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 4;
 }
 
 
@@ -192,6 +203,8 @@ header button {
 @media (min-width: 650px) {
     .main-page {
         display: flex;
+        position: relative;
+        top: 3.5rem;
         flex-direction: row;
     }
 
