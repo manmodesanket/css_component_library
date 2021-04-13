@@ -1,6 +1,4 @@
-.toast-btn {
-    width: 10%;
-}
+
 
 .toasts {
     position: fixed;
@@ -19,4 +17,10 @@
     margin: 0.5em;
     background: var(--primary);
     color: white;
-  }
+}
+
+@media (min-height: 650px) {
+    .toast-btn {
+        width: 10%;
+    }
+}

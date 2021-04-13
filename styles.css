@@ -91,14 +91,7 @@ li {
     padding: 0;
 }
 
-.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 4;
-}
+
 
 
 /*General Componenets*/
@@ -106,6 +99,7 @@ li {
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 .items {
@@ -133,6 +127,17 @@ li {
     transition: all 0.5s ease;
 }
 
+.fixed {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 4;
+}
+
 header {
     width: 100%;
     background-color: #1877f2;
@@ -152,7 +157,7 @@ header button {
     position: fixed;
     background-color: white;
     width: 100vw;
-    z-index: 2;
+    z-index: 5;
     text-align: center;
     margin-top: 0;
     display: flex;
@@ -174,6 +179,14 @@ header button {
 
 .hide {
     display: none;
+}
+
+.component-page {
+    margin-top: 1em;
+}
+
+.component-list {
+    margin-top: 3em;
 }
 
 .component-list-item {
@@ -202,6 +215,16 @@ header button {
 }
 
 @media (min-width: 650px) {
+
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 4;
+    }
+
     .main-page {
         display: flex;
         position: relative;
