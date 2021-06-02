@@ -1,0 +1,26 @@
+
+
+.toasts {
+    position: fixed;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toast-success {
+    border-radius: 5px;
+    padding: 0.7em;
+    margin: 0.5em;
+    background: var(--primary);
+    color: white;
+}
+
+@media (min-height: 650px) {
+    .toast-btn {
+        width: 10%;
+    }
+}
